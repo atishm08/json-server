@@ -1,3 +1,40 @@
+# Steps to run the project
+## Install dependencies
+### Install JSON Server 
+
+```
+npm install -g json-server
+```
+
+Create a `db.json` file with some data
+
+```json
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+```
+Check the posts API if the response is available
+
+## Install Cypress
+```bash
+npm install cypress --save-dev
+```
+
+## Run local server
+```bash
+npm run start
+```
+## Run cypress open
+```bash
+npx cypress open
+```
+
 # JSON Server [![Node.js CI](https://github.com/typicode/json-server/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/typicode/json-server/actions/workflows/node.js.yml)
 
 Get a full fake REST API with __zero coding__ in __less than 30 seconds__ (seriously)
